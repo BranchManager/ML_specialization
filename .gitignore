@@ -1,4 +1,6 @@
 virtml
 bin
 .ipynb_checkpoints
+
+*checkpoint
 *.pyc
