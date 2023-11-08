@@ -54,8 +54,9 @@ def test_compute_loss(target):
     done_vals = np.float32((np.random.uniform(0, 1, size=(64,)) > 0.96) * 1)
 
     loss = target((states, actions, rewards, next_states, done_vals), 0.995, q_network_random, target_q_network_random)
-    
 
+    
+    
     assert np.isclose(loss, 0.6991737), f"Wrong value. Expected {0.6991737}, got {loss}"
 
     # Test when episode terminates
